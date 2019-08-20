@@ -10,10 +10,10 @@ function App() {
   return (
     <Router>
     <div className="App">
-            <Link to="/login">Login</Link>
+        <Link to="/login">Login</Link>
       
-      <Route exact path='/login' component={props => <LoginForm {...props} />} />
-      <PrivateRoute exact path='/friends' component={props => <Friends {...props} />} />
+      <Route path='/login' component={props => <LoginForm {...props} />} />
+      <PrivateRoute path='/friends' component={props => <Friends {...props} />} />
     </div>
     </Router>
   );
